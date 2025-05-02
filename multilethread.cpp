@@ -12,7 +12,10 @@ long long count = 0;
 // so this is the concept of the 
 // so ladies and gentlemen this is the race condition when two or more thread are trying to access 
 // the same resources at the same time and they are trying to modify it at the same time and they are not able to do it properly
-// and to avoid this we have to use the mutex lock ;
+// and to fix this shit we use the 
+// mutex = (to lock access so only one thread updates at a time)
+// atomic = variable (which ensure safe access automatically)
+// i bet u heard of it bt may be never implemented nd got ur hands dirty on it
 void worker() {
     for (long long i = 0; i < 100000; i++) {  
         count++;
