@@ -27,8 +27,6 @@ int main() {
     std::thread t1(worker);
     std::thread t2(worker); 
     t1.join(); 
-
-    std::cout << "Second worker call\n";
     t2.join();  
 
     return 0;
